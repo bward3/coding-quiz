@@ -1,6 +1,8 @@
 body {
     background-color: #364652;
+    color: #B5BEC6;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: auto;
 }
 
 button {
@@ -14,6 +16,14 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10px;
+}
+
+button:hover {
+    background-color: #5a6b79;
+}
+
+button:active{
+    background-color: #2c4355;
 }
 
 .start-btn {
@@ -35,7 +45,6 @@ header {
 }
 
 header h2 {
-    color: #BFB1C1;
     margin-left: 1rem;
 }
 
@@ -64,23 +73,19 @@ input[type=submit] {
 
 #container {
     background-color: #071108;
-    color: #B5BEC6;
     margin-top: 10%;
     padding: 2rem;
     text-align: center;
     width: 60%;
-    white-space: pre;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
 }
 
 #container h1 {
+    word-wrap: break-word;
+    flex-wrap: wrap;
     margin-top: .2rem;
-}
-
-#container div {
-    display: block;
 }
 
 ul {

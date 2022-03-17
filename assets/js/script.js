@@ -8,28 +8,25 @@ const HISCORE_MAX = 10
 const SCORE_KEY = 'highScores';
 
 var questions = [
-    ["What is my favorite color?", 0],
-    ["What is the airspeed velocity of an unladen swallow?", 3],
-    ["What is the capital of Turkey?", 0],
-    ["Where is the Taj Mahal located?", 0],
-
     ["Inside which HTML element do we put the JavaScript?", 3],
-    ["What is the correct syntax for referring to an external script called \"xxx.js\"?", ]
-
-
-
+    ["What is the correct syntax for referring to an external script called \"xxx.js\"?", 1],
+    ["How do you create a function in JavaScript?", 2],
+    ["How do you call a function called myFunc()?", 0],
+    ["Which of the following is correct syntax for an if statement in JavaScript?", 3],
+    ["What is the correct syntax to create a variable \"x\" and set it's value to 4?", 0],
+    ["What is the correct syntax to retrieve the 3rd element of an array called myArray?", 2],
+    ["How do I produce a random integer from 1-10 in JavaScript?", 1]
 ]
 
 var answers = [
-    ["Blue", "Green", "Yellow", "Orange"],
-    ["25mph", "100m/s", "45mph", "Is it a European or African swallow?"],
-    ["Istanbul", "Madrid", "Athens", "Constantinople"],
-    ["Agra", "Nagpur", "Kolkata", "Mumbai"],
-
     ["<scripting>", "<js>", "<code>", "<script>"],
-    ["<script name=\"xxx.js\">", "<script src=\"xxx.js\">", "<script href=\"xxx.js\">", "<script id=\"xxx.js\">"]
-
-    
+    ["<script name=\"xxx.js\">", "<script src=\"xxx.js\">", "<script href=\"xxx.js\">", "<script id=\"xxx.js\">"],
+    ["function = myFunc()", "function:myFunc", "function myFunc()", "myFunc => function()"],
+    ["myFunc()", "myFunc.go", "myFunc", "run myFunc()"],
+    ["if i = 4", "if (i=4)", "if (i==4) then", "if (i==4)"],
+    ["var x = 4", "x = 4", "int x = 4", "set x = 4"],
+    ["myArray(3)", "myArray[3]", "myArray[2]", "myArray(2)"],
+    ["Math.random(10)", "Math.round(Math.random()*10)+1", "10.random()", "Math.round(Math.random()*10)"]
 ]
 
 init();
@@ -130,7 +127,7 @@ function gameOver() {
     quizContainer.innerHTML = "";
     timerEl.innerHTML = ""
     gameOn = false;
-    questionNum=0;
+    questionNum = 0;
     enterScore();
 }
 
