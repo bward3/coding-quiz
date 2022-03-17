@@ -1,5 +1,29 @@
 body {
+    background-color: #364652;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    background-color: #364652;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.start-btn {
+    align-self: center;
+    text-align: center;
+    width: 40%;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 header {
@@ -11,7 +35,7 @@ header {
 }
 
 header h2 {
-    color: blue;
+    color: #BFB1C1;
     margin-left: 1rem;
 }
 
@@ -25,16 +49,49 @@ main {
     justify-content: center;
 }
 
+input {
+    margin: 1rem;
+    align-self: center;
+}
+
+input[type=text] {
+    width: 50%;
+}
+
+input[type=submit] {
+    width: 10%;
+}
+
 #container {
-    margin-top: 15%;
+    background-color: #071108;
+    color: #B5BEC6;
+    margin-top: 10%;
     padding: 2rem;
     text-align: center;
-    width: 50%;
+    width: 60%;
     white-space: pre;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#container h1 {
+    margin-top: .2rem;
+}
+
+#container div {
+    display: block;
 }
 
 ul {
+    display: block;
+    float: left;
     list-style-type: none;
+    padding: 0;
+}
+
+ol {
+    padding: 0;
 }
 
 li {
@@ -42,8 +99,38 @@ li {
     margin: .5rem;
 }
 
-.post-game {
-    background-color: red;
+#container.post-game {
+    margin-top: 5%;
+}
+
+.post-game li{
+    font-size: 2rem;
+    list-style-type: none;
+    background-color: #B5BEC6;
+    color: #364652;
+    margin:0;
+    margin-left: .5rem;
+    padding: .5rem;
+}
+
+.post-game li:nth-child(odd) {
+    background-color: #C7DBE6;
+}
+
+.post-game li:first-child {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;   
+}
+
+.post-game li:last-child{                         
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;                 
+}
+
+.post-game button {
+    align-self: center;
+    text-align: center;
+    width: 40%;
 }
 
 li::after {
